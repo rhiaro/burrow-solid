@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns0: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2: <http://vocab.amy.so/blog#> .
+
+<http://rhiaro.co.uk/location/other> ns0:title "other" ;
+                                     ns1:label "other" ;
+                                     ns2:pastLabel "went on an adventure" ;
+                                     ns2:presentLabel "is on an adventure" .
+
+<http://rhiaro.co.uk/location/office> ns0:title "office" ;
+                                      ns1:label "office" ;
+                                      ns2:pastLabel "arrived at her office" ;
+                                      ns2:presentLabel "is in her office" .
+
+<http://rhiaro.co.uk/location/home> ns0:title "home" ;
+                                    ns1:label "home" ;
+                                    ns2:pastLabel "went home" ;
+                                    ns2:presentLabel "is at home" .
+
+<http://rhiaro.co.uk/location/meeting> ns0:title "meeting" ;
+                                       ns1:label "meeting" ;
+                                       ns2:pastLabel "went to a meeting" ;
+                                       ns2:presentLabel "is in a meeting" .
+
+<http://rhiaro.co.uk/location/seminar> ns0:title "seminar" ;
+                                       ns1:label "seminar" ;
+                                       ns2:pastLabel "went to a talk or seminar" ;
+                                       ns2:presentLabel "is in a talk or seminar" .
+
+<http://rhiaro.co.uk/location/exercise> ns0:title "exercise" ;
+                                        ns1:label "exercise" ;
+                                        ns2:pastLabel "went out to exercise" ;
+                                        ns2:presentLabel "is out exercising" .
+
+<http://rhiaro.co.uk/location/food> ns0:title "food" ;
+                                    ns1:label "food" ;
+                                    ns2:pastLabel "went out for food" ;
+                                    ns2:presentLabel "is out getting food" .
+
+<http://rhiaro.co.uk/location/transit> ns0:title "transit" ;
+                                       ns1:label "transit" ;
+                                       ns2:pastLabel "was travelling between places" ;
+                                       ns2:presentLabel "is in transit" .
+
+<http://rhiaro.co.uk/location/volunteer> ns0:title "volunteer" ;
+                                         ns1:label "volunteer" ;
+                                         ns2:pastLabel "went to help with something" ;
+                                         ns2:presentLabel "is out helping with something" .
+
+<http://rhiaro.co.uk/location/event> ns0:title "event" ;
+                                     ns1:label "event" ;
+                                     ns2:pastLabel "arrived at an event" ;
+                                     ns2:presentLabel "is at an event" .
