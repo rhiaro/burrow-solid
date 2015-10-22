@@ -55,6 +55,10 @@ def post_checkin(location, tz="EST", date=None):
   
   locations = locations_graph()
   loc_uri = locations.value(predicate=DC.title, object=Literal(location))
+  
+  if not loc_uri:
+    return False
+
   g = Graph()
   g.add( (URIRef(""), AS2.location, URIRef(loc_uri)) )
   g.add( (URIRef(""), DC.created, Literal(date, datatype=XSD.dateTime)) )
