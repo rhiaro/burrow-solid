@@ -1,3 +1,4 @@
+import sys
 import requests
 import datetime
 import pytz
@@ -61,10 +62,12 @@ def post_checkin(location, tz="EST", date=None):
   headers = {"Content-Type": "text/turtle", "Link": "<http://www.w3.org/ns/ldp#Resource; rel=\"type\""}
   data = g.serialize(format="turtle")
   r = requests.post("https://data.amy.gy/locations/", headers=headers, data=data, verify=False)
-  print r.status_code
   return r
 
-def main():
+def main(argv):
+
+  print post_checkin(argv)
+  
   data = load_checkins()
   locations = locations_graph()
 
@@ -75,10 +78,5 @@ def main():
     label = locations.value(location, BLOG.pastLabel)
     print "%s at %s" % (label, time)
 
-  print "\n\n"
-
-  print post_checkin("transit")
-
-
 if __name__ == '__main__':
-  main()
+  main(sys.argv[1])
